@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+</head>
+<body>
+
+    <h1>Contact</h1>
+
+    <p>
+        Syracuse University<br>
+        Huntington Hall 030<br>
+        Syracuse, NY 13244
+    </p>
+
+    <p><a href="mailto:bhvinal@syr.edu">bhvinal@syr.edu</a></p>
+
+    <p>
+        <a href="https://www.linkedin.com" target="_blank">
+            <img src="../images/LI-In-Bug.png" alt="LinkedIn logo">
+            My LinkedIn Profile
+        </a>
+    </p>
+
+    <iframe
+        src="https://maps.google.com/maps?q=900+South+Crouse+Avenue+Syracuse+NY+13244&output=embed"
+        width="600"
+        height="450"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+    </iframe>
+
+<h2>Contact Me</h2>
+    <form action="" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <p>Preferred contact method:</p>
+        <input type="radio" id="email-pref" name="contact-method" value="email">
+        <label for="email-pref">Email</label>
+        <input type="radio" id="phone-pref" name="contact-method" value="phone">
+        <label for="phone-pref">Phone</label><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
