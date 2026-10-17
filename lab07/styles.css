@@ -10,3 +10,16 @@ a {
 h1, h2, h3 {
   color: #E10600;
 }
+nav {
+  background-color: #1F1F1F;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+nav a {
+  color: #FFFFFF;
+}
+
+nav a:hover {
+  background-color: #E10600;
+}
