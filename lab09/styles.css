@@ -1,0 +1,130 @@
+body {
+  background-color: #121212;
+  color: #E8E8E8;
+}
+
+a {
+  color: #4FC3F7;
+}
+
+h1, h2, h3 {
+  color: #E10600;
+}
+
+nav {
+  background-color: #1F1F1F;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+nav a {
+  color: #FFFFFF;
+}
+
+nav a:hover {
+  background-color: #E10600;
+}
+
+.bio-photo {
+  float: right;
+  width: 250px;
+  max-width: 40%;
+  margin: 0 0 15px 25px;
+  border-radius: 8px;
+}
+
+.clear {
+  clear: both;
+}
+
+footer .copyright {
+  float: left;
+}
+
+footer .tagline {
+  float: right;
+  font-style: italic;
+}
+
+/* Lab 9: contact page flexbox - each ROW is one rounded box */
+.row {
+  display: flex;
+  background-color: #1F1F1F;
+  border-radius: 25px;
+  padding: 25px;
+  margin: 0 30px 30px 30px;   /* space from page edges + between rows */
+}
+
+.col {
+  flex: 1;
+  padding: 0 20px;            /* space between the two columns */
+}
+
+.li-logo {
+  width: 24px;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+.map {
+  width: 100%;
+  height: 350px;
+  border: 0;
+  border-radius: 8px;
+}
+
+/* Form styling */
+.contact-form label {
+  display: block;
+  margin: 12px 0 5px 0;
+}
+
+.contact-form .radio-label {
+  display: inline;
+  margin-right: 15px;
+}
+
+.contact-form input[type="text"],
+.contact-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: #121212;
+  color: #E8E8E8;
+  border: 1px solid #444444;
+  border-radius: 6px;
+  font-family: inherit;
+}
+
+.contact-form input[type="submit"] {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #E10600;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Lab 9: skills page */
+.center-heading {
+  text-align: center;
+}
+
+.skillstable table {
+  margin: 0 auto;
+}
+
+.skillsimage {
+  text-align: center;
+}
+
+.skillstable, .skillsimage {
+  flex-basis: 50%;
+}
+
+.skillsimage img {
+  width: 250px;
+  max-width: 100%;
+  filter: invert(1);   /* makes the black icon white so it shows on the dark box */
+}
