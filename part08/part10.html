@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Viewport Size Test</title>
+<style>
+body {font-family: Arial;}
+
+.small {display: none;}
+
+@media only screen and (max-width: 800px) {
+  .small {display: block;}
+  .large {display: none;}
+}
+</style>
+</head>
+<body>
+
+<h1 class="large">I'm large when the viewport is over 800px</h1>
+<h1 class="small">I'm small when the viewport is 800px or less</h1>
+
+</body>
+</html>
