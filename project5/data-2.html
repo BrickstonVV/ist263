@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Comparing speed, throttle, and car position data from Charles Leclerc's two Parabolica crashes at Monza.">
+  <title>Comparing the Data | Parabolica: Same Corner, Six Years Apart</title>
+</head>
+<body>
+  <header>
+    <p>Parabolica: Same Corner, Six Years Apart</p>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="crashes.html">The Two Crashes</a></li>
+        <li><a href="data.html" aria-current="page">Comparing the Data</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Comparing the Data</h1>
+    <p>By comparing race data from both crashes, we can look for patterns in what went wrong.</p>
+    <p>The data on this page comes from FastF1, a free Python tool that downloads official Formula 1 timing and telemetry. For every lap, it records the car's speed, throttle, brake, gear, and position on the track several times per second. Lining up Leclerc's laps from 2020 and 2026 by distance around the track lets us compare the two crashes at the exact same point in the corner.</p>
+
+    <section>
+      <h2>Speed</h2>
+      <p>Looking at how fast Leclerc was going into the corner in each crash shows whether he was carrying too much speed and where he started to lose control.</p>
+      <p>The key parts to compare are the entry speed, the lowest speed in the middle of the corner, and how quickly the speed builds on the exit. If one crash shows a higher minimum speed, it suggests Leclerc was pushing harder through the corner. If the speed suddenly stops rising on the exit, that is likely the moment the car started to slide.</p>
+      <figure>
+        <img src="images/speed-chart.png" alt="Illustrative line chart comparing Leclerc's speed through the Parabolica in 2020 and 2026" width="900" height="500">
+        <figcaption>Speed through the Parabolica, 2020 vs. 2026. Illustrative example made by Brickston Vinal; not real race data.</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Throttle</h2>
+      <p>Throttle data shows how hard he was pushing on the gas through the corner. Getting on the throttle too early at the Parabolica can cause the car to slide.</p>
+      <p>This is where the two explanations can be tested. If the 2020 throttle trace shows Leclerc going to full throttle early while the speed data shows a slide, that supports his view that he pushed too hard on tyres without enough grip. In 2026, if his throttle input was smooth but the car still snapped, that would fit his comment about unusual power delivery. The 2026 cars rely much more on electric power than the 2020 cars did, which changes how power reaches the rear wheels.</p>
+      <figure>
+        <img src="images/throttle-chart.png" alt="Illustrative line chart comparing Leclerc's throttle use through the Parabolica in 2020 and 2026" width="900" height="500">
+        <figcaption>Throttle use through the Parabolica, 2020 vs. 2026. Illustrative example made by Brickston Vinal; not real race data.</figcaption>
+      </figure>
+    </section>
+
+    <section>
+      <h2>Car Position</h2>
+      <p>Tracking the car's position on the track shows the exact line he took each time and where the car left the track.</p>
+      <p>FastF1 records the car's X and Y coordinates, which can be drawn on a map of the corner. Comparing the two lines shows whether Leclerc turned in at the same point, how close he ran to the edge of the track on the exit, and where each car started to leave the racing line.</p>
+    </section>
+
+    <section>
+      <h2>Race Situation</h2>
+      <p>The data does not tell the whole story on its own. In 2020, the crash came in the middle of the race on hard tyres. In 2026, it came on only the second lap, when the tyres were still building temperature, the car was heavy with fuel, and Leclerc was in a close fight with other drivers. All of these make the car harder to control on the exit of a fast corner.</p>
+    </section>
+
+    <section>
+      <h2>What the Crashes Have in Common</h2>
+      <p>Putting the data together helps explain why the Parabolica is so tricky. Even for a top driver like Leclerc, the mix of high speed and a long corner leaves very little room for error, which is likely why he crashed there twice.</p>
+      <p>Both crashes happened on the exit, the part of the corner where drivers try hardest to gain time for the straight that follows. Both happened while Leclerc was fighting for position at his team's home race. Whether the main cause was driver error, grip, or the car itself, the Parabolica punishes any loss of control at the moment the driver asks the most from the car.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created by Brickston Vinal for IST 263, Syracuse University.</p>
+    <p>Race data from <a href="https://docs.fastf1.dev/">FastF1</a>. This is a student project and is not affiliated with Formula 1 or Scuderia Ferrari.</p>
+  </footer>
+</body>
+</html>
