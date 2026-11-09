@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participation 12</title>
+    <style>
+        #su {
+            font-size: 2em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="su" onclick="changeText()">Syracuse University</div>
+
+    <script>
+        function changeText() {
+            document.getElementById("su").innerHTML = "Orange Nation";
+            document.getElementById("su").style.color = "#F76900";
+        }
+    </script>
+
+</body>
+</html>
